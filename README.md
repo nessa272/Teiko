@@ -14,3 +14,9 @@ Reads/Writes from a given cell-count CSV file.
 Run
 ```sh
 python teiko_technical.py
+```
+
+### Output
+Saves generated files in the `output/` directory.
+- **Immune Cell Frequencies CSV**: `output/cell-frequencies.csv`
+- **Boxplots**: All plots are saved in `output/boxplots/`
