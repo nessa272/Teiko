@@ -1,6 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 
 df = pd.read_csv("cell-count.csv")
 immune_cells = ['b_cell','cd8_t_cell','cd4_t_cell','nk_cell','monocyte']
