@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 df = pd.read_csv("cell-count.csv")
 immune_cells = ['b_cell','cd8_t_cell','cd4_t_cell','nk_cell','monocyte']
@@ -26,6 +27,7 @@ def melanoma_tr1_responders():
         plt.xlabel('Response')
         plt.ylabel('Relative Frequency')
         plt.savefig('output/boxplots/' + cell + '_plot.jpg', dpi=300, bbox_inches='tight')
+        plt.close()
         print('Saved relative frequency of ' + cell + ' of responders vs. non-responders to "output/boxplots/' + cell + '_plot.jpg"')
 
 get_relative_frequencies()
